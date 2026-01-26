@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacOSystem,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background: #f7efe3;
+}
+::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-logo);
+  border-radius: 30px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.section {
+  max-width: 1240px;
+  padding: 24px 25px;
+  margin: 0 auto;
+}

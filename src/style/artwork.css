@@ -1,0 +1,16 @@
+.ar-slider {
+  gap: 30px;
+}
+
+.art-slider img {
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .art-slider {
+    text-align: center;
+  }
+  .art-slider img {
+    height: 250px;
+  }
+}

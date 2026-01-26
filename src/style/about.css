@@ -1,0 +1,173 @@
+.about-wrapper {
+  background: #f9f1e6;
+  padding: 60px 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-container {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Image */
+.about-image {
+  height: 350px;
+  width: 70%;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Card */
+.about-card {
+  height: 350px;
+  width: 28%;
+  background: #ffc766;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #8b3d18;
+  margin-bottom: 6px;
+}
+
+.location {
+  font-size: 13px;
+  color: #8b3d18;
+  margin-bottom: 14px;
+}
+
+.role {
+  font-weight: 600;
+  font-size: 15px;
+  color: #8b3d18;
+  margin-bottom: 18px;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6b2f14;
+  margin-bottom: 14px;
+}
+
+.collab {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #6b2f14;
+}
+
+/* Bottom */
+.about-footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.about-footer h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #8b3d18;
+}
+
+.about-footer h1 span {
+  display: block;
+}
+.a-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.contact-box {
+  padding: 20px 24px;
+  border-radius: 6px;
+}
+
+.contact-box h3 {
+  background: var(--highlight-bg);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-logo);
+  margin-bottom: 6px;
+}
+
+.contact-box p {
+  font-size: 13px;
+  color: var(--text-link);
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.socials span {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--text-logo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-footer {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    padding: 30px 20px;
+    overflow-x: hidden;
+  }
+  .about-image {
+    height: 300px;
+    width: 100%;
+  }
+  .about-card {
+    width: 100%;
+    height: 440px;
+  }
+  .about-footer p {
+    display: none;
+  }
+  .a-img img {
+    display: none;
+  }
+
+  .about-card {
+    padding: 24px;
+  }
+  .contact-box {
+    text-align: center;
+  }
+  .socials {
+    margin-left: 50px;
+  }
+}
